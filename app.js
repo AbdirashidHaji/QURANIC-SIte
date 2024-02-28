@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     var toggleButton = document.getElementById("toggleAudio");
     var nextButton = document.getElementById("nextSurah");
+    var previousButton = document.getElementById("previousSurah");
     var audioElement = document.createElement("audio");
     var currentSurah = 1;
 
@@ -142,6 +143,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     nextButton.addEventListener("click", function() {
         currentSurah = (currentSurah % 114) + 1;
+        loadSurah(currentSurah);
+        if (!audioElement.paused) {
+            audioElement.pause();
+            toggleButton.textContent = "Play Audio";
+        }
+    });
+    previousButton.addEventListener("click", function() {
+        currentSurah = (currentSurah === 1) ? 114 : currentSurah - 1;
         loadSurah(currentSurah);
         if (!audioElement.paused) {
             audioElement.pause();
