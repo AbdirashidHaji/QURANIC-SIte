@@ -1,0 +1,21 @@
+Quran Audio Player
+
+The Quran Audio Player is a simple web application that allows users to listen to audio recitations of the Quran. Users can play, pause, and navigate through different surahs using the provided controls.
+
+Features
+
+Play and pause audio playback.
+Navigate to the next or previous surah.
+Display the name of the currently playing surah.
+Usage
+Clone or download the repository to your local machine.
+Ensure you have a modern web browser installed (e.g., Google Chrome, Mozilla Firefox).
+Open the index.html file in your web browser.
+Click the "Play Audio" button to start listening to the recitation of the first surah.
+Use the "Next Surah" and "Previous Surah" buttons to navigate through different surahs.
+Enjoy listening to the Quran audio recitations.
+
+Technology Used
+.HTML
+.CSS
+.JavaScript
