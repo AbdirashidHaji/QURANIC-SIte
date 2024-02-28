@@ -1,0 +1,93 @@
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: chocolate;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.main_div {
+    margin: 0;
+    color: blueviolet;
+}
+
+.quranic {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.quranic img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quranic h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.quranic p {
+    margin: 5px 0;
+}
+
+.surats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.surat {
+    margin: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.surat:hover {
+    transform: translateY(-5px);
+}
+
+.surat h2 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.surat-audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: maroon;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 12 20px 40px rgba(150, 34, 34, 0.2);
+}
+
+button:hover {
+    background-color: #555;
+}
+
+@media only screen and (max-width: 768px) {
+    .surat {
+        width: calc(50% - 20px);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .surat {
+        width: calc(100% - 20px);
+    }
+}
